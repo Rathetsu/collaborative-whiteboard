@@ -1,0 +1,7 @@
+{
+	"workbench.colorTheme": "Solarized Dark",
+	"editor.autoClosingOvertype": "auto",
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"editor.insertSpaces": false
+}
