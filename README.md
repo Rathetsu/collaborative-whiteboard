@@ -17,7 +17,7 @@ git clone https://github.com/Rathetsu/collaborative-whiteboard.git
 cd collaborative-whiteboard
 ```
 
-Then [install node.js](https://nodejs.org/en/download/) (v10.0 or superior), then install WBO's dependencies:
+Then [install node.js](https://nodejs.org/en/download/) (v12.0 or superior), then install dependencies:
 
 ```
 npm i
