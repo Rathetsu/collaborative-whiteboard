@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import Board from "../board/Board";
 
+import './style.css';
+
 class Container extends Component {
 
 	constructor(props) {
