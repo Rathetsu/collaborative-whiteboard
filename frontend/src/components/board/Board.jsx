@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import { Canvas } from '../Canvas';
 import './style.css';
 
 class Board extends Component {
@@ -10,9 +11,7 @@ class Board extends Component {
 
 	render() {
 		return (
-			<canvas className={'board'} id={'board'}>
-
-			</canvas>
+			<Canvas />
 		);
 	}
 
