@@ -3,14 +3,16 @@ import { ReactSketchCanvas } from 'react-sketch-canvas';
 
 
 
-export const Canvas = () => {
+export const Canvas = (props) => {
 	return (
 		<ReactSketchCanvas
 			style={styles.canvas}
 			width={'100%'}
 			height={'100%'}
-			strokeColor={'black'}
-			strokeWidth={2}
+			strokeColor={props.strokeColor}
+			strokeWidth={props.strokeWidth}
+			withTimestamp={true}
+			onStroke={props.onStroke}
 		/>
 	)
 }

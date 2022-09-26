@@ -11,7 +11,11 @@ class Board extends Component {
 
 	render() {
 		return (
-			<Canvas />
+			<Canvas
+				strokeColor={this.props.strokeColor}
+				strokeWidth={this.props.strokeWidth}
+				onStroke={this.props.onStroke}
+			/>
 		);
 	}
 
