@@ -2,7 +2,6 @@ import React from 'react';
 import { ReactSketchCanvas } from 'react-sketch-canvas';
 
 
-
 export const Canvas = (props) => {
 	return (
 		<ReactSketchCanvas

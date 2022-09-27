@@ -1,10 +1,16 @@
 import React, { Component } from "react";
+import io from 'socket.io-client';
 
 import Board from "../board/Board";
 
 import './style.css';
 
+
+let URL = 'http://localhost:4130' // 
+
 class Container extends Component {
+
+	socket = io(URL);
 
 	constructor(props) {
 		super(props);
@@ -16,9 +22,9 @@ class Container extends Component {
 
 	onStroke = (stroke) => {
 		// export an image from the canvas and returns a promise which resolves to base64 data URL of the sketch
-		// stroke.exportImage().then((dataUrl) => {
-		// 	console.log(dataUrl);
-		// });
+		stroke.exportImage().then((dataUrl) => {
+			this.socket.emit('canvas-data', dataUrl)
+		});
 	}
 
 
